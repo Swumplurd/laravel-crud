@@ -1,0 +1,5 @@
+body {
+    background-image: url('./wickedbackground.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

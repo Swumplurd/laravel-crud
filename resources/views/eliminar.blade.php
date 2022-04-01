@@ -8,7 +8,9 @@
         <div class="p-5 my-4 bg-light rounded-3 shadow">
             <div class="container-fluid">
                 <h1 class="display-5 fw-bold">CRUD con Laravel y MySQL</h1>
-                <a class="btn btn-primary" href="{{ route("personas.index") }}" type="button">Atras</a>
+                <a class="btn btn-primary" href="{{ route("personas.index") }}" type="button">
+                    <i class="bi bi-arrow-return-left me-2"></i>Atras
+                </a>
             </div>
           </div>
     </div>
@@ -40,7 +42,9 @@
 </div>
 <div class="row">
     <div class="col">
-        <a href="{{route('personas.destroy', $persona->id)}}" class="btn btn-danger">Borrar</a>
+        <a href="{{route('personas.destroy', $persona->id)}}" class="btn btn-danger">
+            <i class="bi bi-person-x-fill me-2"></i>Borrar
+        </a>
     </div>
 </div>
 @endsection

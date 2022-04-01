@@ -8,13 +8,15 @@
         <div class="p-5 my-4 bg-light rounded-3 shadow">
             <div class="container-fluid">
                 <h1 class="display-5 fw-bold">CRUD con Laravel y MySQL</h1>
-                <a class="btn btn-primary" href="{{ route("personas.index") }}" type="button">Atras</a>
+                <a class="btn btn-primary" href="{{ route("personas.index") }}" type="button">
+                    <i class="bi bi-arrow-return-left me-2"></i>Atras
+                </a>
             </div>
           </div>
     </div>
 </div>
 <div class="row gx-0 mb-4">
-    <div class="col p-5 bg-light mx-0">
+    <div class="col p-5 bg-light mx-0 shadow">
         <form action="{{route('personas.update', $persona->id)}}" method="POST">
             @csrf
             @method("PUT")
@@ -38,7 +40,9 @@
                 <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" aria-describedby="fecha_nacimientoHelp" value="{{$persona->fecha_nacimiento}}" required>
                 <div id="fecha_nacimientoHelp" class="form-text">Ingresa tu fecha_nacimiento</div>
             </div>
-            <button type="submit" class="btn btn-warning align-self-end">Actualizar</button>
+            <button type="submit" class="btn btn-warning align-self-end">
+                <i class="bi bi-pencil-square me-2"></i>Actualizar
+            </button>
         </form>
     </div>
 </div>
